@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erzincan Yeşilay | EBYÜ Genç Yeşilay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Yeşilay'ın kurumsal yeşil tonlarına yakın renkler */
+        :root {
+            --yesilay-green: #008a44;
+            --yesilay-dark-green: #005a2d;
+            --yesilay-light-gray: #f0f2f5;
+        }
+        .bg-yesilay-green { background-color: var(--yesilay-green); }
+        .bg-yesilay-dark-green { background-color: var(--yesilay-dark-green); }
+        .text-yesilay-green { color: var(--yesilay-green); }
+        .text-yesilay-dark-green { color: var(--yesilay-dark-green); }
+        .border-yesilay-green { border-color: var(--yesilay-green); }
+        .hover\:bg-yesilay-dark-green:hover { background-color: var(--yesilay-dark-green); }
+        .hover\:text-yesilay-green:hover { color: var(--yesilay-green); }
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Basit Yeşilay Logo SVG (Hilal olarak güncellendi) -->
+                <svg class="w-10 h-10 text-yesilay-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.2 2.1c-4.4 0-8.1 3.7-8.1 8.1 0 4.4 3.7 8.1 8.1 8.1 1.1 0 2.2-.2 3.2-.6-3.2-1.2-5.4-4.2-5.4-7.5 0-3.3 2.2-6.3 5.4-7.5-1-.4-2.1-.6-3.2-.6z"></path></svg>
+                <span class="text-xl font-bold text-yesilay-dark-green">Erzincan Yeşilay</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#hakkimizda" class="text-gray-600 hover:text-yesilay-green font-medium">Hakkımızda</a>
+                <a href="#calisma-alanlari" class="text-gray-600 hover:text-yesilay-green font-medium">Çalışma Alanları</a>
+                <a href="#yedam" class="text-gray-600 hover:text-yesilay-green font-medium">YEDAM</a>
+                <a href="#projeler" class="text-gray-600 hover:text-yesilay-green font-medium">Projeler</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-yesilay-green font-medium">İletişim</a>
+            </div>
+            <a href="#iletisim" class="hidden md:block bg-yesilay-green text-white px-5 py-2 rounded-full font-semibold hover:bg-yesilay-dark-green transition duration-300">
+                Destek Al: 115
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#hakkimizda" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">Hakkımızda</a>
+            <a href="#calisma-alanlari" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">Çalışma Alanları</a>
+            <a href="#yedam" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">YEDAM</a>
+            <a href="#projeler" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">Projeler</a>
+            <a href="#iletisim" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">İletişim</a>
+            <a href="#iletisim" class="block px-6 py-3 bg-yesilay-green text-white text-center font-semibold rounded-b-lg">
+                Destek Al: 115
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-yesilay-green text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Erzincan Yeşilay varsa</h1>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6">hayat var.</h2>
+            <p class="text-lg md:text-2xl max-w-3xl mx-auto">
+                Erzincan Yeşilay ve EBYÜ Genç Yeşilay ile bağımlılıklardan uzak, iyi ve sağlıklı bir hayat var.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-yesilay-light-gray py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Güçlü Bir Ağın Parçasıyız</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl font-bold text-yesilay-green mb-2">120</h3>
+                    <p class="text-gray-700 font-semibold text-lg">Şube (Türkiye'de)</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl font-bold text-yesilay-green mb-2">105</h3>
+                    <p class="text-gray-700 font-semibold text-lg">Danışmanlık Merkezi</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl font-bold text-yesilay-green mb-2">97+</h3>
+                    <p class="text-gray-700 font-semibold text-lg">Ülke Yeşilay'ı (Dünyada)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda (Tarihçe) -->
+    <section id="hakkimizda" class="py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-yesilay-green font-semibold">1920'den Bugüne</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Biz Kimiz?</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Yeşilay, Birinci Dünya Savaşı sonrası işgal güçlerinin alkol ve uyuşturucu maddeleri yaygınlaştırmasına karşı mücadele ruhunu korumak amacıyla 5 Mart 1920'de "Hilal-i Ahdar" adıyla kurulmuştur.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    1934 yılında Mustafa Kemal Atatürk'ün Cumhurbaşkanlığı'nda Bakanlar Kurulu kararıyla "Kamuya Yararlı Dernek Statüsü" almıştır.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Kuruluşundan bu yana, bağımlılık türleri arttıkça Yeşilay'ın da mücadele alanı çeşitlenmiş; alkol, tütün, uyuşturucu madde, kumar ve teknoloji bağımlılığı çalışma alanlarına dâhil olmuştur.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="https://placehold.co/500x400/008a44/ffffff?text=Ye%C5%9Filay+Tarih%C3%A7e" 
+                     alt="Yeşilay Tarihçe İllüstrasyonu" 
+                     class="rounded-lg shadow-xl object-cover"
+                     onerror="this.src='https://placehold.co/500x400/008a44/ffffff?text=Tarih%C3%A7e';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Misyon & Vizyon -->
+    <section class="bg-yesilay-light-gray py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold text-yesilay-dark-green mb-4">Vizyonumuz</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Bağımlılıkla mücadelede ulusal ve uluslararası düzeyde öncü rol oynayan bir Yeşilay.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold text-yesilay-dark-green mb-4">Misyonumuz</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        İnsan onurunu ve saygınlığını temel alan, toplumu ve gençliği ayrım gözetmeden zararlı alışkanlıklardan korumak için çalışan, millî ve ahlaki değerleri gözeterek ve bilimsel metotlar kullanarak her türlü bağımlılıkla mücadele eden, önleyici ve rehabilite edici halk sağlığı ve savunuculuk çalışmaları yürüten bir sivil toplum kuruluşu olmaktır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Çalışma Alanları -->
+    <section id="calisma-alanlari" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mücadele Alanlarımız</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+                Yeşilay, 5 temel bağımlılık alanında önleyici ve rehabilite edici çalışmalar yürütür.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Alkol Bağımlılığı -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yesilay-green transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="text-yesilay-green mb-4">
+                        <!-- Güncellenmiş SVG: Şişe ve Kadeh -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M14 21.5V9c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12.5m8 0H6m8 0h2a1 1 0 001-1V9a4 4 0 00-4-4H7a4 4 0 00-4 4v11.5a1 1 0 001 1h2"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 21.5V12.5m0 9V12.5m0 9h2.5m-2.5 0H15.5m2.5-9a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Alkol Bağımlılığı</h3>
+                </div>
+                <!-- Tütün Bağımlılığı -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yesilay-green transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="text-yesilay-green mb-4">
+                        <!-- Güncellenmiş SVG: Sigaralar -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.5 15.5h15v-2h-15v2zM5.5 15.5V13m0 2.5v-1.5m15-1v1.5m0-1.5V13m-15 1h15m-15-1h1.5m13.5 0h-1.5m-12-1v-1m1.5 1v-1m1.5 1v-1m7.5 1v-1m1.5 1v-1m1.5 1v-1"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 10.5h15v-2h-15v2zM3.5 10.5V8m0 2.5v-1.5m15-1v1.5m0-1.5V8m-15 1h15m-15-1h1.5m13.5 0h-1.5m-12-1V7m1.5 1V7m1.5 1V7m7.5 1V7m1.5 1V7m1.5 1V7"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18.5 15.5s-1-1.5-1-3.5c0-2 1-3.5 1-3.5"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 10.5s-1-1.5-1-3c0-1.5 1-3 1-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sigara / Tütün Bağımlılığı</h3>
+                </div>
+                <!-- Madde Bağımlılığı -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yesilay-green transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="text-yesilay-green mb-4">
+                        <!-- Güncellenmiş SVG: Şırınga ve Haplar -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.5l-9 9m-5-5l9-9m0 0l-2-2m2 2l2 2m-11 3l-2 2m2-2l2-2m7 7l-2 2m2-2l2-2"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12.5 2.5h-1v3h1v-3zM15 4.5l-2.1-2.1m-3 3L7.8 3.3M7.5 2.5h1v3h-1v-3zM5 4.5l2.1-2.1m3 3L12.2 3.3"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 13a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Uyuşturucu Madde Bağımlılığı</h3>
+                </div>
+                <!-- Kumar Bağımlılığı -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yesilay-green transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="text-yesilay-green mb-4">
+                        <!-- Güncellenmiş SVG: Oyun Kartları -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4 18.5V7a2 2 0 012-2h10a2 2 0 012 2v11.5a2 2 0 01-2 2H6a2 2 0 01-2-2z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8 17.5V11a1 1 0 00-1-1H5m3 7.5H5m3 0a1.5 1.5 0 103 0H8zm9-3.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8 20.5H6a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v3.5m-4 10h2a2 2 0 002-2V8.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kumar Bağımlılığı</h3>
+                </div>
+                <!-- Teknoloji Bağımlılığı -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yesilay-green transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="text-yesilay-green mb-4">
+                        <!-- Güncellenmiş SVG: Oyun Kontrolcüsü -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.5 11.5h-2a2 2 0 00-2 2v3a2 2 0 002 2h2m0-7v7m13-7h2a2 2 0 012 2v3a2 2 0 01-2 2h-2m0-7v7"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6.5 14H10m4 0h3.5"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.5 11.5a4 4 0 00-11 0h11zM12 11.5V7.5m0 4V9.5"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 15.5a1 1 0 100-2 1 1 0 000 2zM8.5 15.5a1 1 0 100-2 1 1 0 000 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Teknoloji Bağımlılığı</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YEDAM Section -->
+    <section id="yedam" class="py-20 bg-yesilay-dark-green text-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="https://placehold.co/200x100/ffffff/005a2d?text=YEDAM" 
+                     alt="YEDAM Logosu" class="rounded mb-6"
+                     onerror="this.src='https://placehold.co/200x100/ffffff/005a2d?text=YEDAM';">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Yeşilay Danışmanlık Merkezi (YEDAM)</h2>
+                <p class="mb-6 leading-relaxed text-center md:text-left">
+                    YEDAM, Erzincan'da ve Türkiye'nin her yerinde bağımlılık problemi yaşayan kişilere ve yakınlarına ücretsiz psikososyal destek sunar. Alkol, tütün, madde, kumar ve internet bağımlılıkları alanında uzman ekibimizle yanınızdayız.
+                </p>
+                <div class="bg-white text-yesilay-dark-green rounded-lg p-6 shadow-xl text-center">
+                    <h3 class="text-xl font-semibold mb-2">Ücretsiz Danışma Hattı</h3>
+                    <p class="text-5xl font-extrabold">115</p>
+                    <p class="mt-2">Hemen arayın, birlikte bir yol bulalım.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6 mt-10 md:mt-0">
+                <div class="bg-white/10 p-6 rounded-lg text-center backdrop-blur-sm">
+                    <h4 class="text-2xl font-bold mb-2">Psikososyal Tedavi</h4>
+                    <p>Kişiye özgü müdahale planı ve tıbbi tedavi yönlendirmesi.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg text-center backdrop-blur-sm">
+                    <h4 class="text-2xl font-bold mb-2">Danışma Hattı</h4>
+                    <p>Tedaviye yönlendirme, motivasyon sağlama ve nitelikli bilgilendirme.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg text-center backdrop-blur-sm">
+                    <h4 class="text-2xl font-bold mb-2">Sosyal Uyum</h4>
+                    <p>Sosyal inceleme, müdahale planı ve YEDAM Atölye çalışmaları.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg text-center backdrop-blur-sm">
+                    <h4 class="text-2xl font-bold mb-2">YEDAM Atölyeleri</h4>
+                    <p>Mesleki yeterlilikleri geliştirme ve sosyal uyumu sağlama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeler Section -->
+    <section id="projeler" class="py-20 bg-yesilay-light-gray">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Ulusal Projeler ve Yerel Faaliyetler</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- TBM -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/eeeeee/555555?text=TBM" alt="Türkiye Bağımlılıkla Mücadele Eğitim Programı" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/555555?text=TBM';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-yesilay-dark-green">Türkiye Bağımlılıkla Mücadele (TBM)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Yaş gruplarına özel içeriklerle, bilimsel altyapı ışığında 5 bağımlılık alanında toplumun tamamını bilinçlendirmek ve farkındalık oluşturmak.
+                        </p>
+                        <a href="#" class="font-medium text-yesilay-green hover:underline">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <!-- Genç Yeşilay -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/eeeeee/555555?text=EBY%C3%9C+Gen%C3%A7+Ye%C5%9Filay" alt="EBYÜ Genç Yeşilay" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/555555?text=EBY%C3%9C+Gen%C3%A7+Ye%C5%9Filay';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-yesilay-dark-green">EBYÜ Genç Yeşilay</h3>
+                        <p class="text-gray-700 mb-4">
+                            Erzincan Binali Yıldırım Üniversitesi'nde kurulan kulübümüzle şehrimizde eğitim, sempozyum, kamp ve aktiviteler düzenleyen öncü ekip.
+                        </p>
+                        <a href="#" class="font-medium text-yesilay-green hover:underline">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <!-- Bisiklet Turu -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/eeeeee/555555?text=Bisiklet+Turu" alt="Yeşilay Bisiklet Turu" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/555555?text=Bisiklet+Turu';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-yesilay-dark-green">Yeşilay Bisiklet Turu</h3>
+                        <p class="text-gray-700 mb-4">
+                            Türkiye'de ve dünyanın birçok ülkesinde aynı gün düzenlenen, binlerce bisikletlinin iyi ve sağlıklı yaşam için pedal çevirdiği geleneksel etkinlik.
+                        </p>
+                        <a href="#" class="font-medium text-yesilay-green hover:underline">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim / Footer -->
+    <footer id="iletisim" class="bg-gray-800 text-gray-300 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Sol Taraf: Logo ve Hakkında -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-10 h-10 text-yesilay-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.2 2.1c-4.4 0-8.1 3.7-8.1 8.1 0 4.4 3.7 8.1 8.1 8.1 1.1 0 2.2-.2 3.2-.6-3.2-1.2-5.4-4.2-5.4-7.5 0-3.3 2.2-6.3 5.4-7.5-1-.4-2.1-.6-3.2-.6z"></path></svg>
+                        <span class="text-2xl font-bold text-white">Erzincan Yeşilay</span>
+                    </div>
+                    <p class="text-gray-400">Erzincan'da iyi ve sağlıklı bir gelecek için bağımlılıklarla mücadele ediyoruz.</p>
+                </div>
+                
+                <!-- Orta: Hızlı Bağlantılar -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Hızlı Bağlantılar</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hakkimizda" class="hover:text-white">Hakkımızda</a></li>
+                        <li><a href="#calisma-alanlari" class="hover:text-white">Çalışma Alanları</a></li>
+                        <li><a href="https://yedam.org.tr" target="_blank" class="hover:text-white">YEDAM</a></li>
+                        <li><a href="https://tbm.org.tr" target="_blank" class="hover:text-white">TBM</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sağ Taraf: İletişim -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Bize Ulaşın</h4>
+                    <p class="mb-4">
+                        <span class="font-semibold block">YEDAM Danışma Hattı:</span>
+                        <a href="tel:115" class="text-2xl font-bold text-yesilay-green hover:text-green-300">115</a>
+                    </p>
+                    <h4 class="text-lg font-semibold text-white mb-3">Sosyal Medya</h4>
+                    <div class="flex space-x-4">
+                        <!-- Sosyal Medya İkonları (Örnek) -->
+                        <a href="https://www.facebook.com/1920yesilay" target="_blank" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="https://twitter.com/1920yesilay" target="_blank" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                        </a>
+                        <a href="https://www.instagram.com/1920yesilay" target="_blank" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.667 4.771-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.667-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98C23.986 15.667 24 15.259 24 12s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Alt Footer -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Erzincan Yeşilay Şubesi. Tüm hakları saklıdır.</p>
+                <p class="text-gray-500 text-sm mt-2">Bu web sitesi, Yeşilay tanıtım materyallerinden esinlenerek Furkan Uğur Karaduman tarafından oluşturulmuştur.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobil menü toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        // Menü linklerine tıklayınca menüyü kapat
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
